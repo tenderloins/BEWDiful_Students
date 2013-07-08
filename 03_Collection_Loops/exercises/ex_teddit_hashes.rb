@@ -15,3 +15,65 @@
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
 #
+
+
+
+def get_input
+	gets.chomp
+end
+
+def print_story(story)
+	puts "Story: #{story[:title]}\nCategory: #{story[:category]}, Current upvotes: #{story[:votes]}"
+end
+
+stories = []
+
+def get_story
+  story = {}
+  puts "Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!\nPlease enter a story title:"
+  story[:title] = get_input
+  puts "Please add the story category:"
+  story[:category] = get_input
+
+  story[:votes] = 1
+
+  if story[:title].downcase.include? 'cats'
+    story[:votes] *= 5
+  end
+  if story[:title].downcase.include? "bacon"
+  	story[:votes] *= 8
+  end
+  if story[:title].downcase.include? "food"
+  	story[:votes] *= 3
+  end
+  return story
+end
+
+def get_story_alt
+  {}.tap do |story|  #instead of setting a local variable and then returning it at the end *** MORE RUBY LIKE***
+    puts "Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!\nPlease enter a story title:"
+    story[:title] = get_input
+    puts "Please add the story category:"
+    story[:category] = get_input
+
+    story[:votes] = 1
+
+    if story[:title].downcase.include? 'cats'
+      story[:votes] *= 5
+    end
+    if story[:title].downcase.include? "bacon"
+      story[:votes] *= 8
+    end
+    if story[:title].downcase.include? "food"
+      story[:votes] *= 3
+    end
+  end
+end
+
+3.times do 
+  stories << get_story
+end
+
+stories.each do |story|
+  print_story(story)
+end

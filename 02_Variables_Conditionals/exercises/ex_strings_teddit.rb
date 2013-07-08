@@ -10,6 +10,21 @@
 # 	Show the new story the user added.
 # 	Look for repetition and add methods to keep code DRY. 
 
+
+def get_input
+	gets.chomp
+end
+
+puts "Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!\nPlease enter a story title:"
+title = get_input
+puts "Please add the story category:"
+category = get_input
+puts "Story: #{title}\nCategory: #{category}"
+
+
+
+
+
 # Here is an example of what you should see in the terminal when you finish coding.
 # 	Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!"
 # 	Please enter a news story:

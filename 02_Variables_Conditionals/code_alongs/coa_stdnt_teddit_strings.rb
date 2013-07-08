@@ -15,24 +15,49 @@
 #'Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!'
 #'Story: Man raised by wolverines, then eaten Current upvotes: 4'
 
+#puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
+#puts "Story: Man raised by wolverines, then eaten Current upvotes: 4"
 
 #Version 2 - Replace the story title and upvotes with variables.
 ###########
 ###########
 
-
+#puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
+#title = "Story: Man raised by wolverines, then eaten"
+#votes = 4
+#puts title + " Current upvotes: " + votes
 
 #Version 3 - Add data type casting (fix casting issue).
 ###########
 ###########
 
+#puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
+#title = "Story: Man raised by wolverines, then eaten"
+#votes = 4
+# puts title + " Current upvotes: " + votes.to_s
 
 
 #Version 4 - Use string interpolation and escape characters, polish the output.
 ###########
 ###########
+# puts "#{title}\nCurrent upvotes: #{votes}"
+#name = gets
+#puts "Hello #{name}"
 
 
 #Version 5 - Adding methods
 ###########
 ###########
+
+def welcome_user
+	puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
+end
+
+def print_story(title,votes)
+	puts "#{title}\nCurrent upvotes: #{votes}"
+end
+
+
+welcome_user
+print_story("Story: Man raised by wolverines, then eaten",4)
+
