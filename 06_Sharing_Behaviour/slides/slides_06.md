@@ -22,7 +22,7 @@ Head Geek, Insvrance
 ###Sharing is Caring
 
 *	Inheritance
-*	Mixins'
+*	Mixins
 *	Modules
 
 ---
@@ -30,7 +30,6 @@ Head Geek, Insvrance
 
 
 ##Inheritance
-###"I got is from my momma" - Will.i.am
 
 *	Share properties & behavior
 *	Keeps code DRY
@@ -55,7 +54,7 @@ Head Geek, Insvrance
 ##Inheritance
 ###Glimpse into Rails
 
-*	Where you'll see it…
+*	Where you'll see it...
 
 		class User < ActiveRecord::Base
 		end
