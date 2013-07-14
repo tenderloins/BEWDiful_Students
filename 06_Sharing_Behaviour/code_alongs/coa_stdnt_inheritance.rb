@@ -7,6 +7,38 @@
 ################################################################################
 #
 # 1. Create 2 new classes, Employee and Manager.
+
+class Employee #SUPER CLASS
+  attr_accessor :first_name, :last_name
+  def initialize(first_name,last_name)
+    @first_name = first_name
+    @last_name = last_name
+  end  
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+end
+
+
+##IF CLASSES ARE IN SEPERATE FILES YOU WILL NEED TO INCLUDE THE FILE CONTAINING THE PARENT CLASS, AND POSSIBLY LOAD PATH.##
+class Manager < Employee   #SUB CLASS
+  attr_accessor :title, :first_name, :last_name
+  def initialize(title, first_name, last_name)
+    @title = title
+    super(first_name,last_name) #call initialize from Employee class but running it within Manager. Looks for a method with the same name as the method we are in
+    #@first_name = first_name
+    #@last_name = last_name
+  end
+  def full_name
+    "#{super} (#{title})"
+  end
+end
+
+rupert = Manager.new("CEO", "Rupert", "Murdoch")
+
+puts rupert.full_name
+
+
 #
 # 2. Change Manager so that it inherits from Employee.
 #
