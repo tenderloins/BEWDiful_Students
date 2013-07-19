@@ -1,6 +1,0 @@
-ruby '2.0.0' #specify which version of ruby to use
-
-source "https://rubygems.org"
-
-#gem "rdio", "~> 0.1.001"
-gem "rdio_api"
