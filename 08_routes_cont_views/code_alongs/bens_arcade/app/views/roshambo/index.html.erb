@@ -1,0 +1,20 @@
+<h1>Welcome to roshambo!!!</h1>
+
+<p>Please choose your weapon:</p>
+
+<% if @player_choice && !@player_won %>
+	<% if @player_draw %>
+		<strong>It was a draw, please try again!</strong>
+	<% else %>
+		<strong>You lost, please try again!</strong>
+	<% end %>
+	<p>You chose <%= @player_choice %>, the computer chose <%= @computer_choice %></p>
+<% end %>
+
+<ul>
+	<% @weapons.each do |weapon| %>
+		<li>
+			<%= link_to weapon, play_roshambo_path(weapon) %>
+		</li>
+	<% end %>
+</ul>

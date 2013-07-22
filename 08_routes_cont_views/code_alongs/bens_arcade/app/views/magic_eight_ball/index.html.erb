@@ -1,0 +1,17 @@
+<h1>Welcome to Magic Eight Ball</h1>
+
+<p>Ask me a question by adding it to the end of the path and press the enter key for my wisdom!!!</p>
+
+<p>
+	Here are some ideas:
+	<ul>
+		<li>
+			<%= link_to "Should I go to work today?", ask_question_path('should-i-go-to-work-today') %>
+		</li>
+		<li>
+			<%= link_to "Should I have KFC for dinner?", ask_question_path('should-i-have-dirty-bird-for-dinner') %>
+		</li>
+	</ul>
+</p>
+
+<%= link_to "Back to the arcade", root_path %>
