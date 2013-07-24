@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ruby '2.0.0' #specify which version of ruby to use
+=======
+ruby '2.0.0'
+>>>>>>> teacher/master
 =======
 ruby '2.0.0'
 >>>>>>> teacher/master

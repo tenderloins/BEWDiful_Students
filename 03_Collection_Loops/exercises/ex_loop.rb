@@ -10,6 +10,7 @@
 # 1 bottle of beer!
 # You take one down and pass it around,
 # No more bottles of beer on the wall :-(
+<<<<<<< HEAD
 bottles = 99
 
 while bottles > 0
@@ -33,3 +34,5 @@ def plural(num_bottles)
   num_bottles.to_s + (num_bottles == 1 ? "bottle" : "bottles")
   # if this ? then that : else that
 end
+=======
+>>>>>>> teacher/master

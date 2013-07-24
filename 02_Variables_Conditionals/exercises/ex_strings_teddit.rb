@@ -10,6 +10,7 @@
 # 	Show the new story the user added.
 # 	Look for repetition and add methods to keep code DRY. 
 
+<<<<<<< HEAD
 
 def get_input
 	gets.chomp
@@ -25,6 +26,8 @@ puts "Story: #{title}\nCategory: #{category}"
 
 
 
+=======
+>>>>>>> teacher/master
 # Here is an example of what you should see in the terminal when you finish coding.
 # 	Welcome to Teddit! A text based news aggregator. Get today's news tomorrow!"
 # 	Please enter a news story:

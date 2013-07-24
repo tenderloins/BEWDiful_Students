@@ -15,39 +15,53 @@
 #'Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!'
 #'Story: Man raised by wolverines, then eaten Current upvotes: 4'
 
+<<<<<<< HEAD
 #puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
 #puts "Story: Man raised by wolverines, then eaten Current upvotes: 4"
+=======
+>>>>>>> teacher/master
 
 #Version 2 - Replace the story title and upvotes with variables.
 ###########
 ###########
 
+<<<<<<< HEAD
 #puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
 #title = "Story: Man raised by wolverines, then eaten"
 #votes = 4
 #puts title + " Current upvotes: " + votes
+=======
+
+>>>>>>> teacher/master
 
 #Version 3 - Add data type casting (fix casting issue).
 ###########
 ###########
 
+<<<<<<< HEAD
 #puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
 #title = "Story: Man raised by wolverines, then eaten"
 #votes = 4
 # puts title + " Current upvotes: " + votes.to_s
+=======
+>>>>>>> teacher/master
 
 
 #Version 4 - Use string interpolation and escape characters, polish the output.
 ###########
 ###########
+<<<<<<< HEAD
 # puts "#{title}\nCurrent upvotes: #{votes}"
 #name = gets
 #puts "Hello #{name}"
+=======
+>>>>>>> teacher/master
 
 
 #Version 5 - Adding methods
 ###########
 ###########
+<<<<<<< HEAD
 
 def welcome_user
 	puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!"
@@ -61,3 +75,5 @@ end
 welcome_user
 print_story("Story: Man raised by wolverines, then eaten",4)
 
+=======
+>>>>>>> teacher/master

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Explaining Classes, Objects & load paths. 
 #TIME: 15 min
 #INSTRUCTIONAL DESIGN NOTES: 
@@ -44,6 +45,8 @@ end
 
 #puts my_mac.display
 =======
+=======
+>>>>>>> teacher/master
 #Explaining Classes, Objects & load paths. 
 #TIME: 15 min
 #INSTRUCTIONAL DESIGN NOTES: 
@@ -88,5 +91,8 @@ end
 #my_mac.power? true
 
 #puts my_mac.display
+<<<<<<< HEAD
+>>>>>>> teacher/master
+=======
 >>>>>>> teacher/master
 #puts my_pc.display

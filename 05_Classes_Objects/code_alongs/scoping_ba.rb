@@ -1,5 +1,6 @@
 class Greeter
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   GlobalGreeting = "Howdy"
   
@@ -14,6 +15,8 @@ class Greeter
   
   
 =======
+=======
+>>>>>>> teacher/master
   GlobalGreeting = "Howdy"
 
   def self.global_greeting
@@ -26,12 +29,16 @@ class Greeter
   end
   
   
+<<<<<<< HEAD
+>>>>>>> teacher/master
+=======
 >>>>>>> teacher/master
   def greet(name)
     "#{@greeting} #{name}"
   end
 end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  greeter = Greeter.new()
 # puts greeter.greet("Craig")
@@ -43,6 +50,8 @@ end
 
 puts Greeter.global_greeting
 =======
+=======
+>>>>>>> teacher/master
 greeter = Greeter.new
 
 # puts greeter.greet("Ben")
@@ -51,5 +60,9 @@ greeter = Greeter.new
 
 puts Greeter.global_greeting
 # puts Greeter.greet
+<<<<<<< HEAD
+greeter.global_greeting
+>>>>>>> teacher/master
+=======
 greeter.global_greeting
 >>>>>>> teacher/master

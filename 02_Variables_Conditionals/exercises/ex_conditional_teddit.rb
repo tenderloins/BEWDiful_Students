@@ -8,6 +8,7 @@
 #For example:
 # "Cats frolic despite tuna shortage" should give you 5 times the upvotes!
 
+<<<<<<< HEAD
 
 def get_input
 	gets.chomp
@@ -40,3 +41,5 @@ print_story(title,category,votes)
 
 
 
+=======
+>>>>>>> teacher/master

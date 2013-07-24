@@ -14,6 +14,7 @@
 # Use a loop, so that your program continues to ask a user for stories until they chose to quit. ("Would you like to add another story? Enter 'y' or 'n'")
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
+<<<<<<< HEAD
 #
 
 
@@ -77,3 +78,6 @@ end
 stories.each do |story|
   print_story(story)
 end
+=======
+#
+>>>>>>> teacher/master
