@@ -2,6 +2,8 @@ CraigMovieApp::Application.routes.draw do
   
   root 'welcome#index'
   
+  get '/movie/:id' => 'movie#show', :as => :movie_show
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
