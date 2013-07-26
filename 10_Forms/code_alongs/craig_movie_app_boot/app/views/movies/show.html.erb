@@ -1,0 +1,5 @@
+<h1><%= @movie.title %> (<%= link_to "edit", edit_movie_path(@movie) %>)</h1>
+
+<p>Released in <%= @movie.year_released %></p>
+<p><%= @movie.description %></p>
+<p><%= link_to "Home", movies_path %></p>

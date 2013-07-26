@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do | movie | %>
+      <tr>
+        <td><%= link_to movie.title, movie_path(movie) %></td>
+        <td><%= link_to movie.year_released, movie_year_path(movie.year_released) %></td>
+        <td>
+          <%= link_to 'Edit', edit_movie_path(movie), :class => 'btn btn-success btn-mini' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

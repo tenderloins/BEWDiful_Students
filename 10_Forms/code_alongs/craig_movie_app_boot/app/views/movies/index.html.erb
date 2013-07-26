@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="span8">
+		<h1>Movie List</h1>
+		<p>Please select from our catalogue below:</p>
+	</div>
+	<div class="span4">
+		<%= render 'search' %>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<%= render 'list' %>
+	</div>
+</div>
+<%= link_to 'Add movie', new_movie_path, :class => 'btn btn-primary' %>
+
+
+
+	

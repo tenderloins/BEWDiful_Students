@@ -1,6 +1,6 @@
 class ShirtsController < ApplicationController
   
-  before_action :find_shirt, :only=> [:edit, :update]
+  before_action :find_shirt, :only => [:edit, :update]
   
   def index
     @shirts = Shirt.all

@@ -1,0 +1,12 @@
+
+<h1>Showing movies for search: <%= @search %></h1>
+
+<p>Please select from our catalogue below:</p>
+
+
+<%= render 'list' %>
+
+<%= link_to 'Clear search', movies_path, :class => 'btn' %> or
+<%= link_to 'Add movie', new_movie_path, :class => 'btn btn-primary' %>
+
+	
