@@ -1,0 +1,11 @@
+<h1>Welcome to the Movies App</h1>
+
+<p>Please select from our catalogue below:</p>
+
+<ul>
+	<% @movies.each do | movie | %>
+	<li><%= link_to movie.title, movie_path(movie) %> </li>
+	<% end %>
+</ul>	
+
+<p><%= link_to "Add movie", new_movie_path %></p>

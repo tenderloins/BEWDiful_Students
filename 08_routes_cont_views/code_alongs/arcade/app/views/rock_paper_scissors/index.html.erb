@@ -1,0 +1,20 @@
+<h2>Rock, Scissors or Paper?</h2>
+<h3><em>Choose your weapon to continue...</em></h3>
+
+<% if @you_lost == "not_really" %>
+	<p><em>Tie! Your <%= @player_weapon %> was an exact match for my <%= @computer_weapon %></em</p>
+<% end %>
+
+<% if @you_lost == true %>
+	<p><em>Your <%= @player_weapon %> was no match for my mighty <%= @computer_weapon %></em</p>
+<% end %>
+
+<ul>
+	<% @weapons.each do |weapon| %>
+		<li><%= link_to "My weapon choice is #{weapon}", rock_paper_scissors_fight_path(weapon) %></li>
+	<% end %>
+</ul>
+
+<p>
+	<%= link_to "Back to arcade", root_path %>
+</p>
