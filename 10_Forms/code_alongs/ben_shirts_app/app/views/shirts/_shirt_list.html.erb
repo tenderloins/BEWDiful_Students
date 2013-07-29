@@ -1,0 +1,8 @@
+<ul>
+	<% @shirts.each do |shirt| %>
+		<li>
+			<%= shirt.name %>
+			<%= link_to 'Edit', edit_shirt_path(shirt) %>
+		</li>
+	<% end %>
+</ul>

@@ -1,0 +1,26 @@
+<% if @shirt.errors.any? %>
+	<div class='errors'>
+		<p>There were problems creating this shirt:</p>
+		<ul>
+			<% @shirt.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>	
+<% end %>
+
+<%= form_for @shirt do |f| %>
+	
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	
+	<div>
+		<%= f.label :description %>
+		<%= f.text_area :description %>
+	</div>
+	
+	<%= f.submit %> or <%= link_to 'Cancel', shirts_path %>
+
+<% end %>

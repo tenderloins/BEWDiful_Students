@@ -1,0 +1,12 @@
+<h1>Check out our lovely tees</h1>
+
+<%= form_tag search_path do %>
+	
+	<%= text_field_tag 'search' %>
+	<%= submit_tag 'Go' %>
+	
+<% end %>	
+
+<%= render 'shirt_list' %>
+
+<%= link_to 'Add a shirt to the collection', new_shirt_path %>
