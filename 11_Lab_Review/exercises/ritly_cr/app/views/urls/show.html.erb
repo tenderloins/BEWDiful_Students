@@ -1,0 +1,4 @@
+<h2>Url created!</h2>
+<h4>Your code is: <%= @url.new_link %></h4>
+<p>Go to <%= link_to "localhost:3000/#{@url.new_link}", redirect_url_path(@url.new_link) %> to visit your URL</p>
+<p>Or go <%= link_to "home", root_path %></p>

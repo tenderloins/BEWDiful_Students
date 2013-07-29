@@ -1,0 +1,25 @@
+
+<h4>Enter a url to Ritley</h4>
+<% if @url.errors.any? %>
+<div class="errors">
+	<h4>There were problems creating this link</h4>
+	<ul>
+	<% @url.errors.full_messages.each do |message| %>
+		<li><%= message %></li>
+	<% end %>
+	</ul>
+</div>
+
+<% end %>
+
+
+
+<%= form_for @url do |f| %>
+
+      <%= f.label :original_link %>
+
+        <%= f.text_field :original_link  %>
+   
+      <%= f.submit nil %>
+
+<% end %>

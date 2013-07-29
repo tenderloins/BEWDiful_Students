@@ -1,0 +1,4 @@
+<h2>Url code: <%= @url.new_link %></h2>
+<h4>The original link is: <%= @url.original_link %></h4>
+<p><%= link_to "Go there now!", redirect_url_path(@url.new_link) %></p>
+<p>Or go <%= link_to "home", root_path %></p>

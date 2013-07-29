@@ -1,0 +1,5 @@
+<ul>
+<% @urls.each do | url_list | %>
+<li><%= link_to url_list.original_link , redirect_url_path(url_list.new_link) %> [<%= link_to 'preview', preview_url_path(url_list.new_link)%>]</li>
+<% end %>
+</ul>
