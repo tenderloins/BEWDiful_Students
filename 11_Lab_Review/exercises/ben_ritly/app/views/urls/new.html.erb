@@ -1,0 +1,10 @@
+<h1>Welcome to ritly - create a new short url below</h1>
+
+<%= form_for @url do |f| %>
+
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+
+  <%= f.submit %>
+
+<% end %>
