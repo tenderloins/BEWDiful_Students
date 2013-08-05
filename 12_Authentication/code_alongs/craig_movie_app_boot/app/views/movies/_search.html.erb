@@ -1,0 +1,7 @@
+<h4>Search movies</h4>
+<%= form_tag movie_search_path do %>
+
+	<%= text_field_tag 'search' %>
+	<%= submit_tag 'Go', :class => 'btn btn-primary' %>
+
+<% end %>

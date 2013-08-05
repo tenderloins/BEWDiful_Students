@@ -1,0 +1,16 @@
+<% if @movie.errors.any? %>
+
+
+<div class="alert alert-error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4>Nope!</h4> 
+  <p>There were problems editing this movie. Your errors are:
+  	<ul>
+  	<% @movie.errors.full_messages.each do |message| %>
+  		<li><%= message %></li>
+  	<% end %>
+  	</ul>
+  </p>
+</div>
+
+<% end %>
